@@ -1,0 +1,44 @@
+/* Aquatag design tokens — two variations share a core, diverge on palette */
+:root {
+  /* Core ink — used across both variations */
+  --ink: #1a2a0a;
+  --ink-soft: #3a4a2a;
+
+  /* V1 Nursery — cream + moss + marigold */
+  --v1-bg: #f6efdf;
+  --v1-bg-deep: #ece0c4;
+  --v1-moss: #2d8c4e;
+  --v1-moss-deep: #1e6a36;
+  --v1-marigold: #e8a020;
+  --v1-clay: #c04820;
+
+  /* V2 Terrarium — deep green + cream glow */
+  --v2-bg: #0f2418;
+  --v2-bg-deep: #071510;
+  --v2-moss: #4aba6c;
+  --v2-glow: #b8f0c8;
+  --v2-cream: #efe8d4;
+  --v2-coral: #f58c5e;
+
+  /* Status colors — constant across variations */
+  --status-ok: #2d8c4e;
+  --status-due: #e8a020;
+  --status-overdue: #d93636;
+}
+
+/* Type stack — characterful serif + honest sans */
+.font-serif { font-family: "Instrument Serif", "Cormorant Garamond", Georgia, serif; }
+.font-sans  { font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.font-mono  { font-family: "IBM Plex Mono", "SF Mono", ui-monospace, monospace; }
+.font-hand  { font-family: "Caveat", "Bradley Hand", cursive; }
+
+body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+/* Striped placeholder pattern for imagery-to-be-shot */
+.placeholder-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0,0,0,0.06) 0 2px,
+    transparent 2px 14px
+  );
+}

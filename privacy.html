@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title data-i18n="priv.title">Aquatag — Privacy</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/doc.css">
+</head>
+<body>
+<div class="grain"></div>
+
+<div class="doc-top">
+  <a class="doc-brand" href="index.html">
+    <span class="mark"></span>
+    <span>Aquatag</span>
+  </a>
+  <nav class="doc-nav">
+    <a href="index.html" class="doc-back" data-i18n="doc.nav.back">← Home</a>
+  </nav>
+</div>
+
+<div class="doc-eyebrow" data-i18n="priv.eyebrow">Legal · Privacy policy</div>
+<h1 class="doc-h1" data-i18n-html="priv.h1.html">We store <em>nothing.</em></h1>
+<p class="doc-lead" data-i18n="priv.lead">Aquatag is built to be the least-interesting app in your privacy audit. No account, no analytics, no servers we own. Your watering history never leaves your devices unless you deliberately sync it to your own Home Assistant.</p>
+
+<div class="doc-stats">
+  <div class="doc-stat"><b>0</b><span data-i18n="priv.stat1">Accounts required, ever</span></div>
+  <div class="doc-stat"><b>0</b><span data-i18n="priv.stat2">Third-party SDKs bundled</span></div>
+  <div class="doc-stat"><b>0 kB</b><span data-i18n="priv.stat3">Sent to servers we control</span></div>
+</div>
+
+<div class="doc-body">
+  <aside class="doc-toc">
+    <h4 data-i18n="doc.toc">Contents</h4>
+    <ol>
+      <li><a href="#summary" data-i18n="priv.toc1">Summary</a></li>
+      <li><a href="#device" data-i18n="priv.toc2">On your device</a></li>
+      <li><a href="#ha" data-i18n="priv.toc3">Home Assistant sync</a></li>
+      <li><a href="#appstore" data-i18n="priv.toc4">App Store analytics</a></li>
+      <li><a href="#children" data-i18n="priv.toc5">Children</a></li>
+      <li><a href="#changes" data-i18n="priv.toc6">Changes</a></li>
+      <li><a href="#contact" data-i18n="priv.toc7">Contact</a></li>
+    </ol>
+  </aside>
+
+  <article class="doc-content">
+    <section id="summary">
+      <h2 data-i18n="priv.s1.h">The one-paragraph version</h2>
+      <p data-i18n="priv.s1.p1">Aquatag is an iOS app that records when you water your plants. It does that entirely on your phone using SwiftData (Apple's local database), protected by iOS sandboxing. We do not operate a backend. We do not collect analytics. We do not know you installed the app.</p>
+      <div class="callout"><b data-i18n="priv.s1.callout.b">Last updated:</b> <span data-i18n="priv.s1.callout.t">October 2026. Version 1.0 of this policy. Material changes will bump the version and be announced in the app.</span></div>
+    </section>
+
+    <section id="device">
+      <h2 data-i18n="priv.s2.h">What lives on your device</h2>
+      <p data-i18n="priv.s2.p1">When you use Aquatag, the following is stored locally — in Apple's sandboxed app container, which only the app can read:</p>
+      <ul>
+        <li data-i18n="priv.s2.l1">Plant names, species, and the character you picked for each plant.</li>
+        <li data-i18n="priv.s2.l2">Watering interval (how many days between waterings) for each plant.</li>
+        <li data-i18n="priv.s2.l3">Every watering event, including the timestamp and — if enabled — the device name that logged it.</li>
+        <li data-i18n="priv.s2.l4">A per-plant NFC tag identifier (the UID written to your physical sticker).</li>
+      </ul>
+      <p data-i18n="priv.s2.p2">None of this data leaves the device unless you enable Home Assistant sync. Uninstalling the app removes it permanently.</p>
+    </section>
+
+    <section id="ha">
+      <h2 data-i18n="priv.s3.h">Home Assistant sync (optional)</h2>
+      <p data-i18n="priv.s3.p1">If you connect the app to your own Home Assistant instance, each watering event is sent as a single authenticated REST call to the URL you entered. That's it. No telemetry, no analytics, no fallback to our servers (we have none).</p>
+      <p data-i18n="priv.s3.p2">Your long-lived access token is stored in the iOS Keychain, which is hardware-backed and protected by Face ID / Touch ID. You can remove it from Settings → Home Assistant → Disconnect at any time.</p>
+    </section>
+
+    <section id="appstore">
+      <h2 data-i18n="priv.s4.h">App Store analytics</h2>
+      <p data-i18n="priv.s4.p1">Apple provides install counts and crash reports to every App Store developer. This is aggregate and anonymized by Apple — we cannot see individual users. You can opt out at any time in iOS Settings → Privacy → Analytics &amp; Improvements.</p>
+      <p data-i18n="priv.s4.p2">We do not use IDFA, SKAdNetwork, or any other attribution framework. The app is shipped with App Tracking Transparency disabled because there is nothing to track.</p>
+    </section>
+
+    <section id="children">
+      <h2 data-i18n="priv.s5.h">Children</h2>
+      <p data-i18n="priv.s5.p1">Aquatag is safe for any age — including the kids this app was made for. It does not collect personal information from anyone, so there is nothing to gate behind an age prompt.</p>
+    </section>
+
+    <section id="changes">
+      <h2 data-i18n="priv.s6.h">Changes to this policy</h2>
+      <p data-i18n="priv.s6.p1">If we ever change how this app treats data, this page will be updated, and in-app users will see a one-time notice on first launch after the update. We will not retroactively apply a new policy to data collected under an older one.</p>
+    </section>
+
+    <section id="contact">
+      <h2 data-i18n="priv.s7.h">Contact</h2>
+      <p data-i18n-html="priv.s7.p1">Privacy questions, data requests, or general correspondence: <a href="mailto:privacy@aquatag.app">privacy@aquatag.app</a>. We are a two-person studio and read every email.</p>
+    </section>
+  </article>
+</div>
+
+<footer class="doc-footer">
+  <div class="meta"><span>Aquatag · Copyright 2026</span></div>
+  <div class="meta">
+    <a href="index.html" data-i18n="doc.f.overview">Home</a>
+    <span class="dot">·</span>
+    <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+    <span class="dot">·</span>
+    <a href="terms.html" data-i18n="footer.terms">Terms</a>
+    <span class="dot">·</span>
+    <span data-lang-slot></span>
+  </div>
+</footer>
+
+<script>
+// Scroll spy for TOC
+(() => {
+  const links = document.querySelectorAll('.doc-toc a');
+  const map = new Map();
+  links.forEach(a => {
+    const id = a.getAttribute('href').slice(1);
+    const sec = document.getElementById(id);
+    if (sec) map.set(sec, a);
+  });
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.remove('is-active'));
+        const a = map.get(e.target);
+        if (a) a.classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  map.forEach((_, sec) => io.observe(sec));
+})();
+</script>
+<script src="assets/i18n.js"></script>
+</body>
+</html>
