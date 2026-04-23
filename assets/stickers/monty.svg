@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
   <circle cx="50" cy="50" r="50" fill="#2db489"/>
   <g>
-    <circle cx="50" cy="50" r="34" fill="#6fd6b2" fill-opacity="0.28"/>
-    <ellipse cx="50" cy="39" rx="23" ry="26" fill="#3fc598"/>
-    <line x1="50" y1="14" x2="50" y2="62" stroke="#1a8466" stroke-width="1.2" stroke-linecap="round"/>
-    <path d="M32 30 Q22 35 24 46" stroke="#1a8466" stroke-width="2.6" fill="none" stroke-linecap="round"/>
-    <path d="M30 43 Q20 48 23 56" stroke="#1a8466" stroke-width="2.6" fill="none" stroke-linecap="round"/>
-    <path d="M68 30 Q78 35 76 46" stroke="#1a8466" stroke-width="2.6" fill="none" stroke-linecap="round"/>
-    <path d="M70 43 Q80 48 77 56" stroke="#1a8466" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <circle cx="50" cy="50" r="34" fill="#9ee5c4" fill-opacity="0.40"/>
+    <ellipse cx="50" cy="39" rx="23" ry="26" fill="#0d5c3f"/>
+    <line x1="50" y1="14" x2="50" y2="62" stroke="#6fd6b2" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M32 30 Q22 35 24 46" stroke="#6fd6b2" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M30 43 Q20 48 23 56" stroke="#6fd6b2" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M68 30 Q78 35 76 46" stroke="#6fd6b2" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M70 43 Q80 48 77 56" stroke="#6fd6b2" stroke-width="2.6" fill="none" stroke-linecap="round"/>
     <ellipse cx="42" cy="37" rx="4.5" ry="5.5" fill="white"/>
     <circle cx="42" cy="38" r="2.8" fill="#0d3a2a"/>
     <circle cx="43.2" cy="36.5" r="1" fill="white"/>
@@ -15,8 +15,8 @@
     <circle cx="58" cy="38" r="2.8" fill="#0d3a2a"/>
     <circle cx="59.2" cy="36.5" r="1" fill="white"/>
     <path d="M43 47 Q50 52 57 47" stroke="#0d3a2a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-    <ellipse cx="36" cy="46" rx="4" ry="2.5" fill="#8fe8c2" fill-opacity="0.7"/>
-    <ellipse cx="64" cy="46" rx="4" ry="2.5" fill="#8fe8c2" fill-opacity="0.7"/>
+    <ellipse cx="36" cy="46" rx="4" ry="2.5" fill="#3fc598" fill-opacity="0.8"/>
+    <ellipse cx="64" cy="46" rx="4" ry="2.5" fill="#3fc598" fill-opacity="0.8"/>
   </g>
   <text x="50" y="80" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="10" font-weight="700" fill="#f4fff9" letter-spacing="1">MONTY</text>
   <circle cx="50" cy="90" r="3.5" fill="#1a8466"/>

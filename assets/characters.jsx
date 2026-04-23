@@ -18,13 +18,13 @@ const CHARACTERS = {
     text: '#f4fff9',
     render: () => (
       <g>
-        <circle cx="50" cy="50" r="34" fill="#6fd6b2" fillOpacity="0.28"/>
-        <ellipse cx="50" cy="39" rx="23" ry="26" fill="#3fc598"/>
-        <line x1="50" y1="14" x2="50" y2="62" stroke="#1a8466" strokeWidth="1.2" strokeLinecap="round"/>
-        <path d="M32 30 Q22 35 24 46" stroke="#1a8466" strokeWidth="2.6" fill="none" strokeLinecap="round"/>
-        <path d="M30 43 Q20 48 23 56" stroke="#1a8466" strokeWidth="2.6" fill="none" strokeLinecap="round"/>
-        <path d="M68 30 Q78 35 76 46" stroke="#1a8466" strokeWidth="2.6" fill="none" strokeLinecap="round"/>
-        <path d="M70 43 Q80 48 77 56" stroke="#1a8466" strokeWidth="2.6" fill="none" strokeLinecap="round"/>
+        <circle cx="50" cy="50" r="34" fill="#9ee5c4" fillOpacity="0.40"/>
+        <ellipse cx="50" cy="39" rx="23" ry="26" fill="#0d5c3f"/>
+        <line x1="50" y1="14" x2="50" y2="62" stroke="#6fd6b2" strokeWidth="1.2" strokeLinecap="round"/>
+        <path d="M32 30 Q22 35 24 46" stroke="#6fd6b2" strokeWidth="2.6" fill="none" strokeLinecap="round"/>
+        <path d="M30 43 Q20 48 23 56" stroke="#6fd6b2" strokeWidth="2.6" fill="none" strokeLinecap="round"/>
+        <path d="M68 30 Q78 35 76 46" stroke="#6fd6b2" strokeWidth="2.6" fill="none" strokeLinecap="round"/>
+        <path d="M70 43 Q80 48 77 56" stroke="#6fd6b2" strokeWidth="2.6" fill="none" strokeLinecap="round"/>
         <ellipse cx="42" cy="37" rx="4.5" ry="5.5" fill="white"/>
         <circle cx="42" cy="38" r="2.8" fill="#0d3a2a"/>
         <circle cx="43.2" cy="36.5" r="1" fill="white"/>
@@ -32,8 +32,8 @@ const CHARACTERS = {
         <circle cx="58" cy="38" r="2.8" fill="#0d3a2a"/>
         <circle cx="59.2" cy="36.5" r="1" fill="white"/>
         <path d="M43 47 Q50 52 57 47" stroke="#0d3a2a" strokeWidth="1.8" fill="none" strokeLinecap="round"/>
-        <ellipse cx="36" cy="46" rx="4" ry="2.5" fill="#8fe8c2" fillOpacity="0.7"/>
-        <ellipse cx="64" cy="46" rx="4" ry="2.5" fill="#8fe8c2" fillOpacity="0.7"/>
+        <ellipse cx="36" cy="46" rx="4" ry="2.5" fill="#3fc598" fillOpacity="0.8"/>
+        <ellipse cx="64" cy="46" rx="4" ry="2.5" fill="#3fc598" fillOpacity="0.8"/>
       </g>
     ),
   },
@@ -126,16 +126,16 @@ const CHARACTERS = {
     render: () => (
       <g>
         <circle cx="50" cy="50" r="32" fill="#7e0e0c" fillOpacity="0.35"/>
-        <ellipse cx="50" cy="30" rx="22" ry="10" fill="#a0181a"/>
-        <ellipse cx="50" cy="30" rx="22" ry="10" fill="#b82028" transform="rotate(45 50 38)"/>
-        <ellipse cx="50" cy="30" rx="22" ry="10" fill="#8a1012" transform="rotate(90 50 38)"/>
-        <ellipse cx="50" cy="30" rx="22" ry="10" fill="#a0181a" transform="rotate(135 50 38)"/>
-        <ellipse cx="50" cy="33" rx="17" ry="8" fill="#d02830" transform="rotate(22.5 50 38)"/>
-        <ellipse cx="50" cy="33" rx="17" ry="8" fill="#b82028" transform="rotate(67.5 50 38)"/>
-        <ellipse cx="50" cy="33" rx="17" ry="8" fill="#d02830" transform="rotate(112.5 50 38)"/>
-        <ellipse cx="50" cy="33" rx="17" ry="8" fill="#b82028" transform="rotate(157.5 50 38)"/>
-        <circle cx="50" cy="38" r="13" fill="#e85050"/>
-        <circle cx="50" cy="38" r="8" fill="#fba0a0"/>
+        <ellipse cx="50" cy="30" rx="22" ry="10" fill="#f2cdc4"/>
+        <ellipse cx="50" cy="30" rx="22" ry="10" fill="#f8dcd4" transform="rotate(45 50 38)"/>
+        <ellipse cx="50" cy="30" rx="22" ry="10" fill="#e8b8ad" transform="rotate(90 50 38)"/>
+        <ellipse cx="50" cy="30" rx="22" ry="10" fill="#f2cdc4" transform="rotate(135 50 38)"/>
+        <ellipse cx="50" cy="33" rx="17" ry="8" fill="#fbe6df" transform="rotate(22.5 50 38)"/>
+        <ellipse cx="50" cy="33" rx="17" ry="8" fill="#f5d3c9" transform="rotate(67.5 50 38)"/>
+        <ellipse cx="50" cy="33" rx="17" ry="8" fill="#fbe6df" transform="rotate(112.5 50 38)"/>
+        <ellipse cx="50" cy="33" rx="17" ry="8" fill="#f5d3c9" transform="rotate(157.5 50 38)"/>
+        <circle cx="50" cy="38" r="13" fill="#fff3ee"/>
+        <circle cx="50" cy="38" r="8" fill="#f8a89c"/>
         <ellipse cx="46.5" cy="36" rx="3" ry="3.5" fill="white"/>
         <circle cx="46.5" cy="37" r="1.9" fill="#3a0606"/>
         <circle cx="47.5" cy="35.5" r="0.7" fill="white"/>
@@ -163,15 +163,16 @@ const CHARACTERS = {
     render: () => (
       <g>
         <circle cx="50" cy="50" r="32" fill="#9a1858" fillOpacity="0.32"/>
-        <ellipse cx="34" cy="58" rx="12" ry="6" fill="#5a9a3a" transform="rotate(-20 34 58)"/>
-        <ellipse cx="63" cy="54" rx="10" ry="5" fill="#4a8a2a" transform="rotate(15 63 54)"/>
-        <ellipse cx="50" cy="24" rx="9" ry="13" fill="#ff7ab0"/>
-        <ellipse cx="50" cy="24" rx="9" ry="13" fill="#ff7ab0" transform="rotate(72 50 24)"/>
-        <ellipse cx="50" cy="24" rx="9" ry="13" fill="#f060a0" transform="rotate(144 50 24)"/>
-        <ellipse cx="50" cy="24" rx="9" ry="13" fill="#ff7ab0" transform="rotate(216 50 24)"/>
-        <ellipse cx="50" cy="24" rx="9" ry="13" fill="#f060a0" transform="rotate(288 50 24)"/>
-        <circle cx="50" cy="24" r="9" fill="#fff0f5"/>
-        <circle cx="50" cy="24" r="5" fill="#ffc850"/>
+        <path d="M50 33 Q51 46 48 58" stroke="#2c5d1a" strokeWidth="2.4" fill="none" strokeLinecap="round"/>
+        <ellipse cx="34" cy="58" rx="12" ry="6" fill="#2c5d1a" transform="rotate(-20 34 58)"/>
+        <ellipse cx="63" cy="54" rx="10" ry="5" fill="#274d15" transform="rotate(15 63 54)"/>
+        <ellipse cx="50" cy="24" rx="9" ry="13" fill="#f8cf4a"/>
+        <ellipse cx="50" cy="24" rx="9" ry="13" fill="#f8cf4a" transform="rotate(72 50 24)"/>
+        <ellipse cx="50" cy="24" rx="9" ry="13" fill="#e8b520" transform="rotate(144 50 24)"/>
+        <ellipse cx="50" cy="24" rx="9" ry="13" fill="#f8cf4a" transform="rotate(216 50 24)"/>
+        <ellipse cx="50" cy="24" rx="9" ry="13" fill="#e8b520" transform="rotate(288 50 24)"/>
+        <circle cx="50" cy="24" r="9" fill="#fff8e4"/>
+        <circle cx="50" cy="24" r="5" fill="#ff8a1f"/>
         <ellipse cx="47" cy="22" rx="2.8" ry="3.2" fill="white"/>
         <circle cx="47" cy="23" r="1.8" fill="#4a0e30"/>
         <circle cx="48" cy="21.5" r="0.7" fill="white"/>
