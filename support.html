@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title data-i18n="sup.title">Aquatag — Support</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/doc.css">
+</head>
+<body>
+<div class="grain"></div>
+
+<div class="doc-top">
+  <a class="doc-brand" href="index.html">
+    <span class="mark"></span>
+    <span>Aquatag</span>
+  </a>
+  <nav class="doc-nav">
+    <a href="index.html" class="doc-back" data-i18n="doc.nav.back">← Home</a>
+  </nav>
+</div>
+
+<div class="doc-eyebrow" data-i18n="sup.eyebrow">Help · Support</div>
+<h1 class="doc-h1" data-i18n-html="sup.h1.html">How can we <em>help?</em></h1>
+<p class="doc-lead" data-i18n="sup.lead">Aquatag is a small iOS app and a small box of stickers, run by a two-person studio. If something isn't working, or you just have a question, write to us — we read every email and reply within a day or two.</p>
+
+<div class="doc-stats">
+  <div class="doc-stat"><b>&lt; 24h</b><span data-i18n="sup.stat1">Email response, target</span></div>
+  <div class="doc-stat"><b>30</b><span data-i18n="sup.stat2">Day return window</span></div>
+  <div class="doc-stat"><b>CET</b><span data-i18n="sup.stat3">Time zone (Vienna)</span></div>
+</div>
+
+<div class="doc-body">
+  <aside class="doc-toc">
+    <h4 data-i18n="doc.toc">Contents</h4>
+    <ol>
+      <li><a href="#start" data-i18n="sup.toc1">Getting started</a></li>
+      <li><a href="#plants" data-i18n="sup.toc2">Plants &amp; watering</a></li>
+      <li><a href="#nfc" data-i18n="sup.toc3">Stickers &amp; NFC</a></li>
+      <li><a href="#reminders" data-i18n="sup.toc4">Reminders</a></li>
+      <li><a href="#ha" data-i18n="sup.toc5">Home Assistant</a></li>
+      <li><a href="#troubleshooting" data-i18n="sup.toc6">Troubleshooting</a></li>
+      <li><a href="#orders" data-i18n="sup.toc7">Orders &amp; returns</a></li>
+      <li><a href="#contact" data-i18n="sup.toc8">Contact</a></li>
+    </ol>
+  </aside>
+
+  <article class="doc-content">
+    <section id="start">
+      <h2 data-i18n="sup.s1.h">Getting started</h2>
+      <p data-i18n="sup.s1.p1">Install Aquatag from the App Store, open it, and tap the plus button to add your first plant. Give it a name, pick a character, and choose how often it needs watering. That's the entire onboarding — there is no account to create.</p>
+      <p data-i18n="sup.s1.p2">Aquatag works fully offline. The app is free and contains no in-app purchases.</p>
+    </section>
+
+    <section id="plants">
+      <h2 data-i18n="sup.s2.h">Plants &amp; watering</h2>
+      <p data-i18n="sup.s2.p1">Tap a plant to log a watering — the timer resets and the next reminder is scheduled. To edit a plant's name, character, or interval, open it and tap Edit. To delete a plant, swipe left in the plant list.</p>
+      <p data-i18n="sup.s2.p2">You can change a watering interval at any time. Past watering events are kept and visible in the history view.</p>
+    </section>
+
+    <section id="nfc">
+      <h2 data-i18n="sup.s3.h">Stickers &amp; NFC</h2>
+      <p data-i18n="sup.s3.p1">Each kit contains six waterproof NFC stickers, one per character. To bind a sticker to a plant, open the plant in the app, tap Link sticker, and hold your iPhone close to the sticker until it confirms. After that, a tap on the sticker opens the plant and lets you log a watering in one motion.</p>
+      <p data-i18n="sup.s3.p2">NFC works on all iPhones from iPhone 7 onwards. Older iPads do not have the necessary chip — the app still works, you just won't be able to use the tap shortcut.</p>
+    </section>
+
+    <section id="reminders">
+      <h2 data-i18n="sup.s4.h">Reminders &amp; notifications</h2>
+      <p data-i18n="sup.s4.p1">Aquatag schedules a local notification when each plant is due. Notifications are off until you allow them in iOS — go to Settings → Aquatag → Notifications if you missed the prompt during onboarding.</p>
+      <p data-i18n="sup.s4.p2">You can snooze a reminder by 1 day from the notification itself, or change quiet hours per device under Settings → Notifications inside the app.</p>
+    </section>
+
+    <section id="ha">
+      <h2 data-i18n="sup.s5.h">Home Assistant sync</h2>
+      <p data-i18n="sup.s5.p1">The Home Assistant integration is optional and entirely under your control. We do not operate any servers in this path. To enable it, generate a long-lived access token in your Home Assistant profile and paste it into Settings → Home Assistant inside the app. Each watering event is then sent as a single REST call to your instance.</p>
+      <p data-i18n-html="sup.s5.p2.html">Details on what is sent live in the <a href="privacy.html#ha">privacy policy</a>.</p>
+    </section>
+
+    <section id="troubleshooting">
+      <h2 data-i18n="sup.s6.h">Troubleshooting</h2>
+      <ul>
+        <li data-i18n-html="sup.s6.l1.html"><b>Notifications don't arrive.</b> Check iOS Settings → Aquatag → Notifications. Focus modes and Low Power Mode can also delay or silence them.</li>
+        <li data-i18n-html="sup.s6.l2.html"><b>NFC tap doesn't open the app.</b> Make sure the sticker is bound to a plant (Plant → Link sticker). Hold the top of the iPhone over the sticker for a full second.</li>
+        <li data-i18n-html="sup.s6.l3.html"><b>A plant is missing after restoring a backup.</b> Aquatag stores everything in iCloud Backup if you have it enabled. Restore the backup from iOS Settings → Apple ID → iCloud and the data will return.</li>
+        <li data-i18n-html="sup.s6.l4.html"><b>Home Assistant says the call failed.</b> Most often the access token has expired or the URL is wrong. Re-paste both under Settings → Home Assistant.</li>
+      </ul>
+    </section>
+
+    <section id="orders">
+      <h2 data-i18n="sup.s7.h">Orders &amp; returns</h2>
+      <p data-i18n="sup.s7.p1">Sticker kits ship from Austria within 1–2 business days. Standard shipping takes 3–7 days inside the EU and 7–14 days internationally. Orders over €50 ship free.</p>
+      <p data-i18n="sup.s7.p2">You can return a kit within 30 days for a full refund — no forms, no questions. If a sticker peels within 12 months of normal use, write to us and we'll send a replacement.</p>
+    </section>
+
+    <section id="contact">
+      <h2 data-i18n="sup.s8.h">Contact</h2>
+      <p data-i18n-html="sup.s8.p1.html">For app help, sticker questions, or order issues, email <a href="mailto:support@aquatag.app">support@aquatag.app</a>. We aim to reply within one business day in CET.</p>
+      <p data-i18n-html="sup.s8.p2.html">Privacy questions go to <a href="mailto:privacy@aquatag.app">privacy@aquatag.app</a>; everything else can go to <a href="mailto:hello@aquatag.app">hello@aquatag.app</a>.</p>
+    </section>
+  </article>
+</div>
+
+<footer class="doc-footer">
+  <div class="meta"><span>Aquatag · Copyright 2026</span></div>
+  <div class="meta">
+    <a href="index.html" data-i18n="doc.f.overview">Home</a>
+    <span class="dot">·</span>
+    <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+    <span class="dot">·</span>
+    <a href="terms.html" data-i18n="footer.terms">Terms</a>
+    <span class="dot">·</span>
+    <a href="support.html" data-i18n="footer.support">Support</a>
+    <span class="dot">·</span>
+    <span data-lang-slot></span>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const links = document.querySelectorAll('.doc-toc a');
+  const map = new Map();
+  links.forEach(a => {
+    const id = a.getAttribute('href').slice(1);
+    const sec = document.getElementById(id);
+    if (sec) map.set(sec, a);
+  });
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.remove('is-active'));
+        const a = map.get(e.target);
+        if (a) a.classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  map.forEach((_, sec) => io.observe(sec));
+})();
+</script>
+<script src="assets/i18n.js"></script>
+</body>
+</html>
