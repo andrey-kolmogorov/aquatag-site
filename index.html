@@ -296,6 +296,38 @@
   }
   .phones-row::-webkit-scrollbar { display: none; }
 
+  /* ——— APP STORE CTA ——— */
+  .appstore-cta {
+    background: var(--ink); color: var(--cream);
+    padding: 0 40px 140px;
+  }
+  .appstore-cta-inner {
+    display: grid; grid-template-columns: 1fr auto; gap: 80px;
+    align-items: center; max-width: 1000px; margin: 0 auto;
+    padding-top: 80px; border-top: 1px solid rgba(255, 249, 236, 0.08);
+  }
+  .appstore-cta h2 {
+    font-family: var(--serif); font-size: 56px; font-weight: 400;
+    letter-spacing: -1.5px; line-height: 1.05; margin: 0;
+  }
+  .appstore-cta h2 em { font-style: italic; color: #6fd69a; }
+  .appstore-cta p {
+    margin-top: 18px; font-size: 16px; line-height: 1.5;
+    max-width: 420px; color: rgba(255, 249, 236, 0.7);
+  }
+  .appstore-cta .badge { display: inline-block; margin-top: 28px; }
+  .appstore-cta .badge img { display: block; height: 56px; width: auto; }
+  .appstore-cta .qr { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .appstore-cta .qr-frame {
+    background: #fff; padding: 14px; border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  }
+  .appstore-cta .qr-frame img { display: block; width: 160px; height: 160px; }
+  .appstore-cta .qr small {
+    font-size: 11px; color: rgba(255, 249, 236, 0.55);
+    letter-spacing: 1.2px; text-transform: uppercase; font-family: var(--mono);
+  }
+
   /* ——— STICKER ORDER CTA ——— */
   .stickers-cta {
     padding: 140px 40px;
@@ -471,6 +503,10 @@
     .screens-head p { max-width: none; }
     .phones-row { gap: 20px; padding: 0 20px; }
 
+    .appstore-cta { padding: 0 20px 72px; }
+    .appstore-cta-inner { grid-template-columns: 1fr; gap: 32px; padding-top: 60px; }
+    .appstore-cta h2 { font-size: 40px; letter-spacing: -1px; }
+    .appstore-cta .qr { display: none; }
     .stickers-cta { padding: 72px 20px; }
     .stickers-cta-inner { grid-template-columns: 1fr; gap: 40px; }
     .stickers-cta h2 { font-size: 52px; letter-spacing: -1.5px; }
@@ -522,7 +558,7 @@
     Aquatag is an NFC-based plant tracker for iOS. Stick a tag on each pot, tap it when you water, and let your Home Assistant do the remembering.
   </div>
   <div class="hero-cta">
-    <a class="btn-primary" href="#get">
+    <a class="btn-primary" href="https://apps.apple.com/app/id6763767959">
       <svg width="16" height="20" viewBox="0 0 384 512" fill="currentColor"><path d="M318 384c-.1-72 58-129 58-129-39-56-101-57-104-57-44-4-87 26-109 26-23 0-58-26-95-25-49 1-94 28-119 72-51 88-13 218 37 290 24 35 53 75 91 73 37-1 50-24 94-24 43 0 56 24 95 23 39-1 64-36 88-71 19-28 26-42 40-74-83-32-81-153 0-184-12-1-72-58-138-58zM242 79c28-34 25-82 25-82-28 1-62 18-82 41-18 21-34 54-30 85 30 2 62-18 87-44z"/></svg>
       <span data-i18n="cta.download">Download on iOS</span>
     </a>
@@ -656,6 +692,23 @@
     <p data-i18n="nu.screens.p">Big serif, lots of air, no dashboards disguised as spreadsheets. Only what you need to know today.</p>
   </div>
   <div class="phones-row" id="nursery-phones"></div>
+</section>
+
+<!-- APP STORE CTA -->
+<section class="appstore-cta">
+  <div class="appstore-cta-inner">
+    <div>
+      <h2 data-i18n-html="nu.app.h.html">Now <em>on the<br>App Store.</em></h2>
+      <p data-i18n="nu.app.p">Free, no accounts, no ads, no in-app purchases. Available in 175 countries on iPhone and iPad.</p>
+      <a class="badge" href="https://apps.apple.com/app/id6763767959" aria-label="Download on the App Store">
+        <img src="assets/app-store-badge.svg" alt="Download on the App Store">
+      </a>
+    </div>
+    <div class="qr">
+      <div class="qr-frame"><img src="assets/app-store-qr.svg" alt="QR code for Aquatag on the App Store"></div>
+      <small data-i18n="nu.app.qr">Scan to open on iPhone</small>
+    </div>
+  </div>
 </section>
 
 <!-- STICKERS CTA -->
