@@ -23,7 +23,7 @@
 
 <div class="doc-eyebrow" data-i18n="priv.eyebrow">Legal · Privacy policy</div>
 <h1 class="doc-h1" data-i18n-html="priv.h1.html">We store <em>nothing.</em></h1>
-<p class="doc-lead" data-i18n="priv.lead">Aquatag is built to be the least-interesting app in your privacy audit. No account, no analytics, no servers we own. Your watering history never leaves your devices unless you deliberately sync it to your own Home Assistant.</p>
+<p class="doc-lead" data-i18n="priv.lead">Aquatag is built to be the least-interesting app in your privacy audit. No account, no analytics in the app, no servers we own. Your watering history never leaves your devices unless you deliberately sync it to your own Home Assistant.</p>
 
 <div class="doc-stats">
   <div class="doc-stat"><b>0</b><span data-i18n="priv.stat1">Accounts required, ever</span></div>
@@ -39,6 +39,7 @@
       <li><a href="#device" data-i18n="priv.toc2">On your device</a></li>
       <li><a href="#ha" data-i18n="priv.toc3">Home Assistant sync</a></li>
       <li><a href="#appstore" data-i18n="priv.toc4">App Store analytics</a></li>
+      <li><a href="#website" data-i18n="priv.toc.site">This website</a></li>
       <li><a href="#children" data-i18n="priv.toc5">Children</a></li>
       <li><a href="#changes" data-i18n="priv.toc6">Changes</a></li>
       <li><a href="#contact" data-i18n="priv.toc7">Contact</a></li>
@@ -48,7 +49,7 @@
   <article class="doc-content">
     <section id="summary">
       <h2 data-i18n="priv.s1.h">The one-paragraph version</h2>
-      <p data-i18n="priv.s1.p1">Aquatag is an iOS app that records when you water your plants. It does that entirely on your phone using SwiftData (Apple's local database), protected by iOS sandboxing. We do not operate a backend. We do not collect analytics. We do not know you installed the app.</p>
+      <p data-i18n="priv.s1.p1">Aquatag is an iOS app that records when you water your plants. It does that entirely on your phone using SwiftData (Apple's local database), protected by iOS sandboxing. We do not operate a backend. The app collects no analytics. We do not know you installed the app.</p>
       <div class="callout"><b data-i18n="priv.s1.callout.b">Last updated:</b> <span data-i18n="priv.s1.callout.t">October 2026. Version 1.0 of this policy. Material changes will bump the version and be announced in the app.</span></div>
     </section>
 
@@ -76,6 +77,13 @@
       <p data-i18n="priv.s4.p2">We do not use IDFA, SKAdNetwork, or any other attribution framework. The app is shipped with App Tracking Transparency disabled because there is nothing to track.</p>
     </section>
 
+    <section id="website">
+      <h2 data-i18n="priv.site.h">This website</h2>
+      <p data-i18n="priv.site.p1">This website counts page visits with GoatCounter, an open-source analytics service hosted in the EU. It sets no cookies, stores no IP addresses, and collects nothing that identifies you. What it records is the page you viewed, the site that referred you, your browser and operating system, your screen size, and a country derived from your IP address without storing it.</p>
+      <p data-i18n="priv.site.p2">Those numbers exist for one reason: so we can tell whether anyone is finding this site at all. They are never linked to anything in the app — the app itself still sends us nothing.</p>
+      <p data-i18n="priv.site.p3">The site is hosted on GitHub Pages and loads fonts from Google Fonts. Like any web server, those services may log your IP address for security and operation.</p>
+    </section>
+
     <section id="children">
       <h2 data-i18n="priv.s5.h">Children</h2>
       <p data-i18n="priv.s5.p1">Aquatag is safe for any age — including the kids this app was made for. It does not collect personal information from anyone, so there is nothing to gate behind an age prompt.</p>
@@ -100,7 +108,7 @@
     <span class="dot">·</span>
     <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
     <span class="dot">·</span>
-    <a href="terms.html" data-i18n="footer.terms">Terms</a>
+    <a href="terms.html" data-i18n="footer.terms">Terms &amp; imprint</a>
     <span class="dot">·</span>
     <a href="support.html" data-i18n="footer.support">Support</a>
     <span class="dot">·</span>
@@ -131,5 +139,10 @@
 })();
 </script>
 <script src="assets/i18n.js"></script>
+
+<!-- Analytics: GoatCounter. Cookieless, stores no IP addresses, collects no personal data. -->
+<script data-goatcounter="https://aquatag.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<noscript><img src="https://aquatag.goatcounter.com/count?p=noscript" alt="" width="1" height="1"></noscript>
 </body>
 </html>

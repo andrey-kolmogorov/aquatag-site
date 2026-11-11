@@ -21,7 +21,7 @@
     'cta.view_source':  { en: 'View source \u2192', de: 'Quellcode ansehen \u2192' },
     'cta.view_source_gh': { en: 'View source on GitHub \u2192', de: 'Quellcode auf GitHub \u2192' },
     'footer.privacy':   { en: 'Privacy',          de: 'Datenschutz' },
-    'footer.terms':     { en: 'Terms',            de: 'AGB' },
+    'footer.terms':     { en: 'Terms & imprint',  de: 'AGB & Impressum' },
     'footer.support':   { en: 'Support',          de: 'Support' },
 
     // ─────────── SHARED DOC PAGES (privacy, terms, brand, design-system) ───────────
@@ -33,10 +33,15 @@
     'doc.f.landing':    { en: 'Landing',          de: 'Landingpage' },
 
     // ─────────── PRIVACY ───────────
+    'terms.imprint.country': { en: 'Austria', de: '\u00d6sterreich' },
+    'terms.toc.imprint':{ en: 'Imprint', de: 'Impressum' },
+    'terms.imprint.h':  { en: 'Imprint', de: 'Impressum' },
+    'terms.imprint.intro': { en: 'Information under \u00a7 5 ECG and \u00a7 25 Mediengesetz (Austria):', de: 'Angaben gem\u00e4\u00df \u00a7 5 ECG und \u00a7 25 Mediengesetz:' },
+    'terms.imprint.purpose': { en: 'Purpose of this website: information about the Aquatag iOS app.', de: 'Unternehmensgegenstand bzw. Zweck dieser Website: Information \u00fcber die iOS-App Aquatag.' },
     'priv.title':       { en: 'Aquatag — Privacy', de: 'Aquatag — Datenschutz' },
     'priv.eyebrow':     { en: 'Legal · Privacy policy', de: 'Rechtliches · Datenschutzerklärung' },
     'priv.h1.html':     { en: 'We store <em>nothing.</em>', de: 'Wir speichern <em>nichts.</em>' },
-    'priv.lead':        { en: 'Aquatag is built to be the least-interesting app in your privacy audit. No account, no analytics, no servers we own. Your watering history never leaves your devices unless you deliberately sync it to your own Home Assistant.', de: 'Aquatag soll die langweiligste App in deiner Datenschutzprüfung sein. Kein Konto, keine Analytik, keine Server von uns. Dein Gießverlauf verlässt deine Geräte nur, wenn du ihn bewusst mit deinem eigenen Home Assistant synchronisierst.' },
+    'priv.lead':        { en: 'Aquatag is built to be the least-interesting app in your privacy audit. No account, no analytics in the app, no servers we own. Your watering history never leaves your devices unless you deliberately sync it to your own Home Assistant.', de: 'Aquatag soll die langweiligste App in deiner Datenschutzprüfung sein. Kein Konto, keine Analytik in der App, keine Server von uns. Dein Gießverlauf verlässt deine Geräte nur, wenn du ihn bewusst mit deinem eigenen Home Assistant synchronisierst.' },
     'priv.stat1':       { en: 'Accounts required, ever',    de: 'Konten erforderlich, niemals' },
     'priv.stat2':       { en: 'Third-party SDKs bundled',    de: 'Drittanbieter-SDKs enthalten' },
     'priv.stat3':       { en: 'Sent to servers we control',  de: 'An unsere Server gesendet' },
@@ -48,7 +53,7 @@
     'priv.toc6':        { en: 'Changes', de: 'Änderungen' },
     'priv.toc7':        { en: 'Contact', de: 'Kontakt' },
     'priv.s1.h':        { en: 'The one-paragraph version', de: 'Die Kurzfassung' },
-    'priv.s1.p1':       { en: 'Aquatag is an iOS app that records when you water your plants. It does that entirely on your phone using SwiftData (Apple\u2019s local database), protected by iOS sandboxing. We do not operate a backend. We do not collect analytics. We do not know you installed the app.', de: 'Aquatag ist eine iOS-App, die speichert, wann du deine Pflanzen gießt — vollständig auf deinem Gerät via SwiftData (Apples lokale Datenbank), geschützt durch das iOS-Sandboxing. Wir betreiben kein Backend. Wir erheben keine Analytik. Wir wissen nicht, dass du die App installiert hast.' },
+    'priv.s1.p1':       { en: 'Aquatag is an iOS app that records when you water your plants. It does that entirely on your phone using SwiftData (Apple\u2019s local database), protected by iOS sandboxing. We do not operate a backend. The app collects no analytics. We do not know you installed the app.', de: 'Aquatag ist eine iOS-App, die speichert, wann du deine Pflanzen gießt — vollständig auf deinem Gerät via SwiftData (Apples lokale Datenbank), geschützt durch das iOS-Sandboxing. Wir betreiben kein Backend. Die App erhebt keine Analytik. Wir wissen nicht, dass du die App installiert hast.' },
     'priv.s1.callout.b':{ en: 'Last updated:', de: 'Zuletzt aktualisiert:' },
     'priv.s1.callout.t':{ en: 'October 2026. Version 1.0 of this policy. Material changes will bump the version and be announced in the app.', de: 'Oktober 2026. Version 1.0 dieser Richtlinie. Wesentliche Änderungen erhöhen die Version und werden in der App angekündigt.' },
     'priv.s2.h':        { en: 'What lives on your device', de: 'Was auf deinem Gerät liegt' },
@@ -68,6 +73,11 @@
     'priv.s5.p1':       { en: 'Aquatag is safe for any age — including the kids this app was made for. It does not collect personal information from anyone, so there is nothing to gate behind an age prompt.', de: 'Aquatag ist für jedes Alter unbedenklich — auch für die Kinder, für die wir die App gebaut haben. Es werden keinerlei personenbezogene Daten erhoben — keine Altersabfrage nötig.' },
     'priv.s6.h':        { en: 'Changes to this policy', de: 'Änderungen dieser Richtlinie' },
     'priv.s6.p1':       { en: 'If we ever change how this app treats data, this page will be updated, and in-app users will see a one-time notice on first launch after the update. We will not retroactively apply a new policy to data collected under an older one.', de: 'Wenn sich der Umgang mit Daten ändert, aktualisieren wir diese Seite und zeigen in der App einen einmaligen Hinweis beim ersten Start danach. Neue Richtlinien werden nicht rückwirkend auf bereits erhobene Daten angewendet.' },
+    'priv.toc.site':    { en: 'This website', de: 'Diese Website' },
+    'priv.site.h':      { en: 'This website', de: 'Diese Website' },
+    'priv.site.p1':     { en: 'This website counts page visits with GoatCounter, an open-source analytics service hosted in the EU. It sets no cookies, stores no IP addresses, and collects nothing that identifies you. What it records is the page you viewed, the site that referred you, your browser and operating system, your screen size, and a country derived from your IP address without storing it.', de: 'Diese Website z\u00e4hlt Seitenaufrufe mit GoatCounter, einem quelloffenen, in der EU gehosteten Analysedienst. Er setzt keine Cookies, speichert keine IP-Adressen und erfasst nichts, womit man dich identifizieren k\u00f6nnte. Erfasst werden die aufgerufene Seite, die verweisende Website, Browser und Betriebssystem, die Bildschirmgr\u00f6\u00dfe sowie ein aus der IP-Adresse abgeleitetes Land, ohne die IP zu speichern.' },
+    'priv.site.p2':     { en: 'Those numbers exist for one reason: so we can tell whether anyone is finding this site at all. They are never linked to anything in the app \u2014 the app itself still sends us nothing.', de: 'Diese Zahlen gibt es aus einem einzigen Grund: damit wir sehen, ob diese Seite \u00fcberhaupt jemand findet. Sie werden nie mit Daten aus der App verkn\u00fcpft \u2014 die App selbst sendet uns weiterhin nichts.' },
+    'priv.site.p3':     { en: 'The site is hosted on GitHub Pages and loads fonts from Google Fonts. Like any web server, those services may log your IP address for security and operation.', de: 'Die Website l\u00e4uft auf GitHub Pages und l\u00e4dt Schriften von Google Fonts. Wie jeder Webserver k\u00f6nnen diese Dienste deine IP-Adresse aus Sicherheits- und Betriebsgr\u00fcnden protokollieren.' },
     'priv.s7.h':        { en: 'Contact', de: 'Kontakt' },
     'priv.s7.p1':       { en: 'Privacy questions, data requests, or general correspondence: <a href="mailto:privacy@aquatag.app">privacy@aquatag.app</a>. We are a two-person studio and read every email.', de: 'Fragen zum Datenschutz, Auskunftsersuchen oder allgemeine Post: <a href="mailto:privacy@aquatag.app">privacy@aquatag.app</a>. Wir sind ein Zwei-Personen-Studio und lesen jede E-Mail.' },
 
